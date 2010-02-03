@@ -10,7 +10,7 @@ OkudaKit produces syntax highlighted NSAttributedStrings for use in NSTextViews 
 
 h3. How?
 
-Provide a simple **BNF-style grammar** for a language (like, say, JSON) and a **CSS stylesheet** which lists style rules for the productions found in the language grammar. Name your grammar and CSS files something like json.grammar ("example":json.grammar.txt) and json.css ("example":json.css.txt), put them in your app's bundle, and add a few lines of code like this:
+Provide a simple **BNF-style grammar** for a language (like, say, JSON) and a **CSS stylesheet** which lists style rules for the productions found in the language grammar. Name your grammar and CSS files something like json.grammar ("example":http://parsekit.com/okudakit/json.grammar.txt) and json.css ("example":http://parsekit.com/okudakit/json.css.txt), put them in your app's bundle, and add a few lines of code like this:
 
 <pre>
 NSString *s = ... // get a JSON string
