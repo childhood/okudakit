@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		D3A81957101E8C9600C38137 /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A81946101E8C7B00C38137 /* ParseKit.framework */; };
+		D3A81973101E8D5400C38137 /* OKSyntaxHighlighter.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A81972101E8D5400C38137 /* OKSyntaxHighlighter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3A8197B101E8D7500C38137 /* OKSyntaxHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A81976101E8D7500C38137 /* OKSyntaxHighlighter.m */; };
+		D3A8197C101E8D7500C38137 /* OKMiniCSSAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A81977101E8D7500C38137 /* OKMiniCSSAssembler.m */; };
+		D3A8197D101E8D7500C38137 /* OKGenericAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A81978101E8D7500C38137 /* OKGenericAssembler.m */; };
+		D3A81A1C101E8E5A00C38137 /* NSArray+ParseKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A81A1A101E8E5A00C38137 /* NSArray+ParseKitAdditions.m */; };
+		D3A81A21101E8E6900C38137 /* NSString+ParseKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A81A1F101E8E6900C38137 /* NSString+ParseKitAdditions.m */; };
+		D3A81AF7101E8F6700C38137 /* css.css in Resources */ = {isa = PBXBuildFile; fileRef = D3A81AF4101E8F6700C38137 /* css.css */; };
+		D3A81AF8101E8F6700C38137 /* html.css in Resources */ = {isa = PBXBuildFile; fileRef = D3A81AF5101E8F6700C38137 /* html.css */; };
+		D3A81AF9101E8F6700C38137 /* json.css in Resources */ = {isa = PBXBuildFile; fileRef = D3A81AF6101E8F6700C38137 /* json.css */; };
+		D3A81AFD101E8F6F00C38137 /* css.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3A81AFA101E8F6F00C38137 /* css.grammar */; };
+		D3A81AFE101E8F6F00C38137 /* html.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3A81AFB101E8F6F00C38137 /* html.grammar */; };
+		D3A81AFF101E8F6F00C38137 /* json.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3A81AFC101E8F6F00C38137 /* json.grammar */; };
+		D3A81B1C101E8FD100C38137 /* OKMiniCSSAssemblerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A81B19101E8FD100C38137 /* OKMiniCSSAssemblerTest.m */; };
+		D3A81B1D101E8FD100C38137 /* OKGenericAssemblerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A81B1A101E8FD100C38137 /* OKGenericAssemblerTest.m */; };
+		D3A81B24101E904600C38137 /* OkudaKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A81B23101E904600C38137 /* OkudaKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3A81B27101E908000C38137 /* OKTestScaffold.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A81B26101E908000C38137 /* OKTestScaffold.m */; };
+		D3A81B32101E917A00C38137 /* OkudaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* OkudaKit.framework */; };
+		D3A81B36101E91A900C38137 /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A81946101E8C7B00C38137 /* ParseKit.framework */; };
+		D3A81B6E101E927900C38137 /* OKMini_css.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3A81B6D101E927900C38137 /* OKMini_css.grammar */; };
+		D3A81BDA101E95A300C38137 /* OKDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A81BD9101E95A300C38137 /* OKDemoAppDelegate.m */; };
+		D3A81BDC101E95D200C38137 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3A81BDB101E95D200C38137 /* MainMenu.xib */; };
+		D3A81BE7101E96F800C38137 /* OkudaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* OkudaKit.framework */; };
+		D3A81BF1101E973500C38137 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D6A5FE840307C02AAC07 /* AppKit.framework */; };
+		D3A81BF2101E973500C38137 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
+		D3A81BF5101E974600C38137 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A81BE8101E970600C38137 /* Cocoa.framework */; };
+		D3A81BFF101E97CF00C38137 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A81BFE101E97CF00C38137 /* main.m */; };
+		D3A81C05101E98C000C38137 /* javascript.grammar in Resources */ = {isa = PBXBuildFile; fileRef = D3A81C04101E98C000C38137 /* javascript.grammar */; };
+		D3A81C0B101E98D200C38137 /* example.css in Resources */ = {isa = PBXBuildFile; fileRef = D3A81C06101E98D200C38137 /* example.css */; };
+		D3A81C0C101E98D200C38137 /* example.html in Resources */ = {isa = PBXBuildFile; fileRef = D3A81C07101E98D200C38137 /* example.html */; };
+		D3A81C0D101E98D200C38137 /* nyt.html in Resources */ = {isa = PBXBuildFile; fileRef = D3A81C08101E98D200C38137 /* nyt.html */; };
+		D3A81C0E101E98D200C38137 /* yahoo-small.json in Resources */ = {isa = PBXBuildFile; fileRef = D3A81C09101E98D200C38137 /* yahoo-small.json */; };
+		D3A81C0F101E98D200C38137 /* yahoo.json in Resources */ = {isa = PBXBuildFile; fileRef = D3A81C0A101E98D200C38137 /* yahoo.json */; };
+		D3A81C79101EEB9700C38137 /* javascript.css in Resources */ = {isa = PBXBuildFile; fileRef = D3A81C78101EEB9700C38137 /* javascript.css */; };
+		D3A81C9C101EED4400C38137 /* example.js in Resources */ = {isa = PBXBuildFile; fileRef = D3A81C7A101EEC6E00C38137 /* example.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3A81945101E8C7B00C38137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A81935101E8C7B00C38137 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = ParseKit;
+		};
+		D3A81947101E8C7B00C38137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A81935101E8C7B00C38137 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D389F1CE0F1965E600558235;
+			remoteInfo = JSParseKit;
+		};
+		D3A81949101E8C7B00C38137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A81935101E8C7B00C38137 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D3FDC5830FFC4BFC00F1F797;
+			remoteInfo = ParseKitMobile;
+		};
+		D3A8194B101E8C7B00C38137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A81935101E8C7B00C38137 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D3C7D87A0A411FBF005DD154;
+			remoteInfo = Tests;
+		};
+		D3A8194D101E8C7B00C38137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A81935101E8C7B00C38137 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D33494100E2963FD00406085;
+			remoteInfo = DemoApp;
+		};
+		D3A8194F101E8C7B00C38137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A81935101E8C7B00C38137 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D34185040E520D3F0081B0DC;
+			remoteInfo = DebugApp;
+		};
+		D3A81951101E8C7B00C38137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A81935101E8C7B00C38137 /* ParseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D389F2030F196A7500558235;
+			remoteInfo = JSDemoApp;
+		};
+		D3A81955101E8C8700C38137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A81935101E8C7B00C38137 /* ParseKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = ParseKit;
+		};
+		D3A81B1F101E902200C38137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = OkudaKit;
+		};
+		D3A81B21101E902B00C38137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = OkudaKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32DBCF5E0370ADEE00C91783 /* OkudaKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OkudaKit_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* OkudaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OkudaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		D3A81935101E8C7B00C38137 /* ParseKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ParseKit.xcodeproj; path = lib/parsekit/ParseKit.xcodeproj; sourceTree = "<group>"; };
+		D3A81972101E8D5400C38137 /* OKSyntaxHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKSyntaxHighlighter.h; path = include/OkudaKit/OKSyntaxHighlighter.h; sourceTree = "<group>"; };
+		D3A81976101E8D7500C38137 /* OKSyntaxHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKSyntaxHighlighter.m; path = src/OKSyntaxHighlighter.m; sourceTree = "<group>"; };
+		D3A81977101E8D7500C38137 /* OKMiniCSSAssembler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKMiniCSSAssembler.m; path = src/OKMiniCSSAssembler.m; sourceTree = "<group>"; };
+		D3A81978101E8D7500C38137 /* OKGenericAssembler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKGenericAssembler.m; path = src/OKGenericAssembler.m; sourceTree = "<group>"; };
+		D3A81979101E8D7500C38137 /* OKMiniCSSAssembler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKMiniCSSAssembler.h; path = src/OKMiniCSSAssembler.h; sourceTree = "<group>"; };
+		D3A8197A101E8D7500C38137 /* OKGenericAssembler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKGenericAssembler.h; path = src/OKGenericAssembler.h; sourceTree = "<group>"; };
+		D3A81A19101E8E5A00C38137 /* NSArray+ParseKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+ParseKitAdditions.h"; path = "lib/parsekit/src/NSArray+ParseKitAdditions.h"; sourceTree = "<group>"; };
+		D3A81A1A101E8E5A00C38137 /* NSArray+ParseKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+ParseKitAdditions.m"; path = "lib/parsekit/src/NSArray+ParseKitAdditions.m"; sourceTree = "<group>"; };
+		D3A81A1E101E8E6900C38137 /* NSString+ParseKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ParseKitAdditions.h"; path = "lib/parsekit/src/NSString+ParseKitAdditions.h"; sourceTree = "<group>"; };
+		D3A81A1F101E8E6900C38137 /* NSString+ParseKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ParseKitAdditions.m"; path = "lib/parsekit/src/NSString+ParseKitAdditions.m"; sourceTree = "<group>"; };
+		D3A81AF4101E8F6700C38137 /* css.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = css.css; path = res/css.css; sourceTree = "<group>"; };
+		D3A81AF5101E8F6700C38137 /* html.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = html.css; path = res/html.css; sourceTree = "<group>"; };
+		D3A81AF6101E8F6700C38137 /* json.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = json.css; path = res/json.css; sourceTree = "<group>"; };
+		D3A81AFA101E8F6F00C38137 /* css.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = css.grammar; path = res/css.grammar; sourceTree = "<group>"; };
+		D3A81AFB101E8F6F00C38137 /* html.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = html.grammar; path = res/html.grammar; sourceTree = "<group>"; };
+		D3A81AFC101E8F6F00C38137 /* json.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = json.grammar; path = res/json.grammar; sourceTree = "<group>"; };
+		D3A81B07101E8F9400C38137 /* OKDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A81B12101E8FB200C38137 /* OKTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OKTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A81B18101E8FD100C38137 /* OKMiniCSSAssemblerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKMiniCSSAssemblerTest.h; path = test/OKMiniCSSAssemblerTest.h; sourceTree = "<group>"; };
+		D3A81B19101E8FD100C38137 /* OKMiniCSSAssemblerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKMiniCSSAssemblerTest.m; path = test/OKMiniCSSAssemblerTest.m; sourceTree = "<group>"; };
+		D3A81B1A101E8FD100C38137 /* OKGenericAssemblerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKGenericAssemblerTest.m; path = test/OKGenericAssemblerTest.m; sourceTree = "<group>"; };
+		D3A81B1B101E8FD100C38137 /* OKGenericAssemblerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKGenericAssemblerTest.h; path = test/OKGenericAssemblerTest.h; sourceTree = "<group>"; };
+		D3A81B23101E904600C38137 /* OkudaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OkudaKit.h; path = src/OkudaKit.h; sourceTree = "<group>"; };
+		D3A81B25101E908000C38137 /* OKTestScaffold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKTestScaffold.h; path = test/OKTestScaffold.h; sourceTree = "<group>"; };
+		D3A81B26101E908000C38137 /* OKTestScaffold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKTestScaffold.m; path = test/OKTestScaffold.m; sourceTree = "<group>"; };
+		D3A81B6D101E927900C38137 /* OKMini_css.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = OKMini_css.grammar; path = res/OKMini_css.grammar; sourceTree = "<group>"; };
+		D3A81B72101E92AD00C38137 /* OKTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "OKTests-Info.plist"; path = "test/OKTests-Info.plist"; sourceTree = "<group>"; };
+		D3A81B74101E92BD00C38137 /* OKDemoApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "OKDemoApp-Info.plist"; path = "app/OKDemoApp-Info.plist"; sourceTree = "<group>"; };
+		D3A81BD8101E95A300C38137 /* OKDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OKDemoAppDelegate.h; path = app/OKDemoAppDelegate.h; sourceTree = "<group>"; };
+		D3A81BD9101E95A300C38137 /* OKDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OKDemoAppDelegate.m; path = app/OKDemoAppDelegate.m; sourceTree = "<group>"; };
+		D3A81BDB101E95D200C38137 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = app/MainMenu.xib; sourceTree = "<group>"; };
+		D3A81BE8101E970600C38137 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D3A81BFE101E97CF00C38137 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = app/main.m; sourceTree = "<group>"; };
+		D3A81C04101E98C000C38137 /* javascript.grammar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = javascript.grammar; path = res/javascript.grammar; sourceTree = "<group>"; };
+		D3A81C06101E98D200C38137 /* example.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = example.css; path = app/example.css; sourceTree = "<group>"; };
+		D3A81C07101E98D200C38137 /* example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = example.html; path = app/example.html; sourceTree = "<group>"; };
+		D3A81C08101E98D200C38137 /* nyt.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = nyt.html; path = app/nyt.html; sourceTree = "<group>"; };
+		D3A81C09101E98D200C38137 /* yahoo-small.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "yahoo-small.json"; path = "app/yahoo-small.json"; sourceTree = "<group>"; };
+		D3A81C0A101E98D200C38137 /* yahoo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = yahoo.json; path = app/yahoo.json; sourceTree = "<group>"; };
+		D3A81C78101EEB9700C38137 /* javascript.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = javascript.css; path = res/javascript.css; sourceTree = "<group>"; };
+		D3A81C7A101EEC6E00C38137 /* example.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = example.js; path = app/example.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A81BF1101E973500C38137 /* AppKit.framework in Frameworks */,
+				D3A81BF2101E973500C38137 /* Foundation.framework in Frameworks */,
+				D3A81957101E8C9600C38137 /* ParseKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A81B05101E8F9400C38137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A81BF5101E974600C38137 /* Cocoa.framework in Frameworks */,
+				D3A81BE7101E96F800C38137 /* OkudaKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A81B0F101E8FB200C38137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A81B36101E91A900C38137 /* ParseKit.framework in Frameworks */,
+				D3A81B32101E917A00C38137 /* OkudaKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* OkudaKit.framework */,
+				D3A81B12101E8FB200C38137 /* OKTests.octest */,
+				D3A81B07101E8F9400C38137 /* OKDemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* OkudaKit */ = {
+			isa = PBXGroup;
+			children = (
+				D3A81935101E8C7B00C38137 /* ParseKit.xcodeproj */,
+				08FB77AEFE84172EC02AAC07 /* OkudaKit Framework */,
+				D3A81975101E8D6000C38137 /* OkudaKit Tests */,
+				D3A81B6C101E921000C38137 /* OKDemoApp */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = OkudaKit;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+				D3A81AF1101E8F2000C38137 /* Grammars */,
+				D3A81AF2101E8F2500C38137 /* CSS */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* OkudaKit Framework */ = {
+			isa = PBXGroup;
+			children = (
+				D3A81B23101E904600C38137 /* OkudaKit.h */,
+				D3A81972101E8D5400C38137 /* OKSyntaxHighlighter.h */,
+				D3A81976101E8D7500C38137 /* OKSyntaxHighlighter.m */,
+				D3A81979101E8D7500C38137 /* OKMiniCSSAssembler.h */,
+				D3A81977101E8D7500C38137 /* OKMiniCSSAssembler.m */,
+				D3A8197A101E8D7500C38137 /* OKGenericAssembler.h */,
+				D3A81978101E8D7500C38137 /* OKGenericAssembler.m */,
+			);
+			name = "OkudaKit Framework";
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3A81BE8101E970600C38137 /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D3A81A1E101E8E6900C38137 /* NSString+ParseKitAdditions.h */,
+				D3A81A1F101E8E6900C38137 /* NSString+ParseKitAdditions.m */,
+				D3A81A19101E8E5A00C38137 /* NSArray+ParseKitAdditions.h */,
+				D3A81A1A101E8E5A00C38137 /* NSArray+ParseKitAdditions.m */,
+				32DBCF5E0370ADEE00C91783 /* OkudaKit_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D3A81936101E8C7B00C38137 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3A81946101E8C7B00C38137 /* ParseKit.framework */,
+				D3A81948101E8C7B00C38137 /* JSParseKit.framework */,
+				D3A8194A101E8C7B00C38137 /* libparsekit.a */,
+				D3A8194C101E8C7B00C38137 /* Tests.octest */,
+				D3A8194E101E8C7B00C38137 /* DemoApp.app */,
+				D3A81950101E8C7B00C38137 /* DebugApp.app */,
+				D3A81952101E8C7B00C38137 /* JSDemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3A81975101E8D6000C38137 /* OkudaKit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D3A81B72101E92AD00C38137 /* OKTests-Info.plist */,
+				D3A81B25101E908000C38137 /* OKTestScaffold.h */,
+				D3A81B26101E908000C38137 /* OKTestScaffold.m */,
+				D3A81B18101E8FD100C38137 /* OKMiniCSSAssemblerTest.h */,
+				D3A81B19101E8FD100C38137 /* OKMiniCSSAssemblerTest.m */,
+				D3A81B1A101E8FD100C38137 /* OKGenericAssemblerTest.m */,
+				D3A81B1B101E8FD100C38137 /* OKGenericAssemblerTest.h */,
+			);
+			name = "OkudaKit Tests";
+			sourceTree = "<group>";
+		};
+		D3A81AF1101E8F2000C38137 /* Grammars */ = {
+			isa = PBXGroup;
+			children = (
+				D3A81B6D101E927900C38137 /* OKMini_css.grammar */,
+				D3A81AFA101E8F6F00C38137 /* css.grammar */,
+				D3A81AFB101E8F6F00C38137 /* html.grammar */,
+				D3A81C04101E98C000C38137 /* javascript.grammar */,
+				D3A81AFC101E8F6F00C38137 /* json.grammar */,
+			);
+			name = Grammars;
+			sourceTree = "<group>";
+		};
+		D3A81AF2101E8F2500C38137 /* CSS */ = {
+			isa = PBXGroup;
+			children = (
+				D3A81AF4101E8F6700C38137 /* css.css */,
+				D3A81AF5101E8F6700C38137 /* html.css */,
+				D3A81C78101EEB9700C38137 /* javascript.css */,
+				D3A81AF6101E8F6700C38137 /* json.css */,
+			);
+			name = CSS;
+			sourceTree = "<group>";
+		};
+		D3A81B6C101E921000C38137 /* OKDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				D3A81C03101E984D00C38137 /* Examples */,
+				D3A81B74101E92BD00C38137 /* OKDemoApp-Info.plist */,
+				D3A81BDB101E95D200C38137 /* MainMenu.xib */,
+				D3A81BFE101E97CF00C38137 /* main.m */,
+				D3A81BD8101E95A300C38137 /* OKDemoAppDelegate.h */,
+				D3A81BD9101E95A300C38137 /* OKDemoAppDelegate.m */,
+			);
+			name = OKDemoApp;
+			sourceTree = "<group>";
+		};
+		D3A81C03101E984D00C38137 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				D3A81C06101E98D200C38137 /* example.css */,
+				D3A81C07101E98D200C38137 /* example.html */,
+				D3A81C08101E98D200C38137 /* nyt.html */,
+				D3A81C09101E98D200C38137 /* yahoo-small.json */,
+				D3A81C0A101E98D200C38137 /* yahoo.json */,
+				D3A81C7A101EEC6E00C38137 /* example.js */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A81B24101E904600C38137 /* OkudaKit.h in Headers */,
+				D3A81973101E8D5400C38137 /* OKSyntaxHighlighter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* OkudaKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "OkudaKit" */;
+			buildPhases = (
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3A81956101E8C8700C38137 /* PBXTargetDependency */,
+			);
+			name = OkudaKit;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = OkudaKit;
+			productReference = 8DC2EF5B0486A6940098B216 /* OkudaKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D3A81B06101E8F9400C38137 /* OKDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3A81B0C101E8F9500C38137 /* Build configuration list for PBXNativeTarget "OKDemoApp" */;
+			buildPhases = (
+				D3A81B03101E8F9400C38137 /* Resources */,
+				D3A81B04101E8F9400C38137 /* Sources */,
+				D3A81B05101E8F9400C38137 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3A81B22101E902B00C38137 /* PBXTargetDependency */,
+			);
+			name = OKDemoApp;
+			productName = OKDemoApp;
+			productReference = D3A81B07101E8F9400C38137 /* OKDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3A81B11101E8FB200C38137 /* OKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3A81B16101E8FB300C38137 /* Build configuration list for PBXNativeTarget "OKTests" */;
+			buildPhases = (
+				D3A81B0D101E8FB200C38137 /* Resources */,
+				D3A81B0E101E8FB200C38137 /* Sources */,
+				D3A81B0F101E8FB200C38137 /* Frameworks */,
+				D3A81B10101E8FB200C38137 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3A81B20101E902200C38137 /* PBXTargetDependency */,
+			);
+			name = OKTests;
+			productName = OKTests;
+			productReference = D3A81B12101E8FB200C38137 /* OKTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "OkudaKit" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* OkudaKit */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D3A81936101E8C7B00C38137 /* Products */;
+					ProjectRef = D3A81935101E8C7B00C38137 /* ParseKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* OkudaKit */,
+				D3A81B11101E8FB200C38137 /* OKTests */,
+				D3A81B06101E8F9400C38137 /* OKDemoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D3A81946101E8C7B00C38137 /* ParseKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ParseKit.framework;
+			remoteRef = D3A81945101E8C7B00C38137 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3A81948101E8C7B00C38137 /* JSParseKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSParseKit.framework;
+			remoteRef = D3A81947101E8C7B00C38137 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3A8194A101E8C7B00C38137 /* libparsekit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libparsekit.a;
+			remoteRef = D3A81949101E8C7B00C38137 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3A8194C101E8C7B00C38137 /* Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.octest;
+			remoteRef = D3A8194B101E8C7B00C38137 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3A8194E101E8C7B00C38137 /* DemoApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = DemoApp.app;
+			remoteRef = D3A8194D101E8C7B00C38137 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3A81950101E8C7B00C38137 /* DebugApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = DebugApp.app;
+			remoteRef = D3A8194F101E8C7B00C38137 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3A81952101E8C7B00C38137 /* JSDemoApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = JSDemoApp.app;
+			remoteRef = D3A81951101E8C7B00C38137 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				D3A81AF7101E8F6700C38137 /* css.css in Resources */,
+				D3A81AF8101E8F6700C38137 /* html.css in Resources */,
+				D3A81AF9101E8F6700C38137 /* json.css in Resources */,
+				D3A81AFD101E8F6F00C38137 /* css.grammar in Resources */,
+				D3A81AFE101E8F6F00C38137 /* html.grammar in Resources */,
+				D3A81AFF101E8F6F00C38137 /* json.grammar in Resources */,
+				D3A81B6E101E927900C38137 /* OKMini_css.grammar in Resources */,
+				D3A81C05101E98C000C38137 /* javascript.grammar in Resources */,
+				D3A81C79101EEB9700C38137 /* javascript.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A81B03101E8F9400C38137 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A81BDC101E95D200C38137 /* MainMenu.xib in Resources */,
+				D3A81C0B101E98D200C38137 /* example.css in Resources */,
+				D3A81C0C101E98D200C38137 /* example.html in Resources */,
+				D3A81C0D101E98D200C38137 /* nyt.html in Resources */,
+				D3A81C0E101E98D200C38137 /* yahoo-small.json in Resources */,
+				D3A81C0F101E98D200C38137 /* yahoo.json in Resources */,
+				D3A81C9C101EED4400C38137 /* example.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A81B0D101E8FB200C38137 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D3A81B10101E8FB200C38137 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A8197B101E8D7500C38137 /* OKSyntaxHighlighter.m in Sources */,
+				D3A8197C101E8D7500C38137 /* OKMiniCSSAssembler.m in Sources */,
+				D3A8197D101E8D7500C38137 /* OKGenericAssembler.m in Sources */,
+				D3A81A1C101E8E5A00C38137 /* NSArray+ParseKitAdditions.m in Sources */,
+				D3A81A21101E8E6900C38137 /* NSString+ParseKitAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A81B04101E8F9400C38137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A81BDA101E95A300C38137 /* OKDemoAppDelegate.m in Sources */,
+				D3A81BFF101E97CF00C38137 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A81B0E101E8FB200C38137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A81B1C101E8FD100C38137 /* OKMiniCSSAssemblerTest.m in Sources */,
+				D3A81B1D101E8FD100C38137 /* OKGenericAssemblerTest.m in Sources */,
+				D3A81B27101E908000C38137 /* OKTestScaffold.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3A81956101E8C8700C38137 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ParseKit;
+			targetProxy = D3A81955101E8C8700C38137 /* PBXContainerItemProxy */;
+		};
+		D3A81B20101E902200C38137 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* OkudaKit */;
+			targetProxy = D3A81B1F101E902200C38137 /* PBXContainerItemProxy */;
+		};
+		D3A81B22101E902B00C38137 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* OkudaKit */;
+			targetProxy = D3A81B21101E902B00C38137 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/parsekit/build/$(BUILD_STYLE)";
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OkudaKit_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib/parsekit/include/",
+					"$(PROJECT_DIR)/include/",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = OkudaKit;
+				SDKROOT = "";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/parsekit/build/$(BUILD_STYLE)";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OkudaKit_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib/parsekit/include/",
+					"$(PROJECT_DIR)/include/",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = OkudaKit;
+				SDKROOT = "";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		D3A81B0A101E8F9500C38137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "app/OKDemoApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = OKDemoApp;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		D3A81B0B101E8F9500C38137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "app/OKDemoApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = OKDemoApp;
+				SDKROOT = "";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D3A81B14101E8FB300C38137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib/parsekit/build/$(BUILD_STYLE)",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/include/",
+					"$(PROJECT_DIR)/lib/parsekit/include/",
+				);
+				INFOPLIST_FILE = "test/OKTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = OKTests;
+				SDKROOT = "";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D3A81B15101E8FB300C38137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib/parsekit/build/$(BUILD_STYLE)",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/include/",
+					"$(PROJECT_DIR)/lib/parsekit/include/",
+				);
+				INFOPLIST_FILE = "test/OKTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = OKTests;
+				SDKROOT = "";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "OkudaKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "OkudaKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3A81B0C101E8F9500C38137 /* Build configuration list for PBXNativeTarget "OKDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A81B0A101E8F9500C38137 /* Debug */,
+				D3A81B0B101E8F9500C38137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3A81B16101E8FB300C38137 /* Build configuration list for PBXNativeTarget "OKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A81B14101E8FB300C38137 /* Debug */,
+				D3A81B15101E8FB300C38137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

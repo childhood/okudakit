@@ -1,0 +1,50 @@
+h1. OkudaKit
+        
+h3. What is it?
+
+An open source (BSD-license) **Mac OS X Framework** written by "Todd Ditchendorf":http://twitter.com/itod for adding **syntax highlighting** to Cocoa desktop applications using **CSS**.
+
+h3. Why is it cool?
+
+OkudaKit produces syntax highlighted NSAttributedStrings for use in NSTextViews via **CSS stylesheets**. 
+
+h3. How?
+
+Provide a simple **BNF-style grammar** for a language (like, say, JSON) and a **CSS stylesheet** which lists style rules for the productions found in the language grammar. Name your grammar and CSS files something like json.grammar ("example":json.grammar.txt) and json.css ("example":json.css.txt), put them in your app's bundle, and add a few lines of code like this:
+
+<pre>
+NSString *s = ... // get a JSON string
+OKSyntaxHighlighter *highlighter = [OKSyntaxHighlighter syntaxHighlighter];
+NSAttributedString *str = [highlighter highlightedStringForString:s ofGrammar:@"json"];
+[textView setString:str]; // display
+</pre>
+        
+_Voilà_, syntax-highlighted JSON.
+
+h3. Why does it suck?
+
+OkudaKit is currently at version 0.1 which gives you an idea of how mature I think it is. Current suckiness includes (but is not limited to):
+            
+* No error recovery. Your display string must match the grammar provided.
+* Displayed Syntax Highlighting is read-only. No support for live syntax highlight updating (needed for text editors).
+* Only 3 languages are currently supported: HTML, CSS, and JSON. But adding new languages is easy.
+            
+I'm working on these problems now. Stay tuned.
+
+h3. What are the requirements?
+
+* Mac OS X Leopard or later
+* "ParseKit":http://parsekit.com (included in the OkudaKit source)
+
+
+h3. WebKit isn't required?
+
+No.
+
+h3. Why doesn't this work on iPhone OS?
+
+Cuz there's no NSAttributedString on iPhone OS.
+
+h3. What's with the name?
+
+As a kid I was constantly fascinated with the flashing, blinking, multi-colored user-interface displays on Star Trek: The Next Generation. The UI designs for those displays were designed by "Michael Okuda":http://en.wikipedia.org/wiki/Michael_Okuda and sometimes called **OkudaGrams**. The bright colors of syntax highlighting themes remind me of the colorful text often seen in OkudaGrams. So, OkudaKit. Also, I didn't know what else to call it.
